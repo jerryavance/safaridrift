@@ -14,9 +14,9 @@ const Hero = () => {
           height={50}
           className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
         />
-        <h1 className="bold-52 lg:bold-88">Putuk Truno Camp Area</h1>
+        <h1 className="bold-52 lg:bold-88">SafariDrift Pro Racing</h1>
         <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
-          We want to be on each of your journeys seeking the satisfaction of seeing the incorruptible beauty of nature. We can help you on an adventure around the world in just one app
+          We want to be part of every journey that celebrates motion, adrenaline, and the raw beauty of exploration. Whether it’s racing on tarmac, flying over skies, or trekking across Africa’s peaks — SafariDrift is your digital companion for adventure, travel, and extreme sports.
         </p>
 
         <div className="my-11 flex flex-wrap gap-5">
@@ -53,6 +53,7 @@ const Hero = () => {
         </div>
       </div>
 
+
       <div className="relative flex flex-1 items-start">
         <div className="relative z-20 flex w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8">
 
@@ -61,17 +62,17 @@ const Hero = () => {
               <p className="regular-16 text-gray-20">Location</p>
               <Image src="/close.svg" alt="close" width={24} height={24} />
             </div>
-            <p className="bold-20 text-white">Aguas Calientes</p>
+            <p className="bold-20 text-white">🏎️ Busika Motorsports Arena</p>
           </div>
 
           <div className="flexBetween">
             <div className="flex flex-col">
               <p className="regular-16 block text-gray-20">Distance</p>
-              <p className="bold-20 text-white">173.28 mi</p>
+              <p className="bold-20 text-white">45 km from Kampala</p>
             </div>
             <div className="flex flex-col">
               <p className="regular-16 block text-gray-20">Elevation</p>
-              <p className="bold-20 text-white">2.040 km</p>
+              <p className="bold-20 text-white">1,180 m</p>
             </div>
           </div>
         </div>

@@ -10,8 +10,9 @@ const Guide = () => {
           We are here for you
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
-          <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">Guide You to Easy Path</h2>
-          <p className="regular-16 text-gray-30 xl:max-w-[520px]">Only with the hilink application you will no longer get lost and get lost again, because we already support offline maps when there is no internet connection in the field. Invite your friends, relatives and friends to have fun in the wilderness through the valley and reach the top of the mountain</p>
+          <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">Guide You to the Fast Lane</h2>
+          <p className="regular-16 text-gray-30 xl:max-w-[520px]">With the SafariDrift app, you’ll always have a guide — on the track, in the air, or on the mountain trail. We integrate offline navigation, booking tools, and social features that connect travelers, racers, and explorers across Africa.
+          Invite your crew and join the SafariDrift community to live life on the edge — from race circuits to safari trails.</p>
         </div>
       </div>
 
