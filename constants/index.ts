@@ -5,6 +5,7 @@ export const NAV_LINKS = [
   { href: '/racers', key: 'racers', label: 'Racers' },
   { href: '/gallery', key: 'gallery', label: 'Gallery' },
   { href: '/about', key: 'about', label: 'About' },
+  { href: '/contact', key: 'contact', label: 'Contact' },
 ];
 
 // RACERS DATA
@@ -179,6 +180,7 @@ export const FOOTER_LINKS = [
       { label: 'Racers', href: '/racers' },
       { label: 'Gallery', href: '/gallery' },
       { label: 'About', href: '/about' },
+      { label: 'Contact', href: '/contact' },
     ],
   },
   {
