@@ -65,7 +65,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
           <div className="relative h-[250px] sm:h-[350px] md:h-[400px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl zoom-in">
             <Image 
               src="/assets/images/winner.png"
@@ -82,7 +82,49 @@ export default function Home() {
               className="object-cover"
             />
           </div>
+        </div> */}
+
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
+          <div className="relative h-[350px] sm:h-[500px] md:h-[650px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl zoom-in">
+            <Image 
+              src="/assets/images/winner.png"
+              alt="Race Winner"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="relative h-[350px] sm:h-[500px] md:h-[650px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl zoom-in">
+            <Image 
+              src="/assets/images/standings.png"
+              alt="Race Standings"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div> */}
+
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
+          <div className="relative h-[350px] sm:h-[450px] md:h-[550px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
+            <Image 
+              src="/assets/images/winner.png"
+              alt="Race Winner"
+              fill
+              className="object-contain"
+            />
+          </div>
+
+          <div className="relative h-[350px] sm:h-[450px] md:h-[550px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
+            <Image 
+              src="/assets/images/standings.png"
+              alt="Race Standings"
+              fill
+              className="object-contain"
+            />
+          </div>
         </div>
+
+
 
         <div className="text-center">
           <Link href="/racing">
