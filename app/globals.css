@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,24 +11,29 @@
 }
 
 body {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
+  overflow-x: hidden;
 }
 
 @layer utilities {
+  /* Updated button styles with Uganda colors */
   .btn_white { 
-    @apply  border-white bg-white px-8 py-3 text-green-50
+    @apply border-2 border-white bg-white px-6 py-3 text-gray-90 transition-all hover:bg-gray-10 rounded-full text-sm md:text-base md:px-8 md:py-3 font-semibold
   }
   .btn_white_text  { 
-    @apply  border-white bg-white px-8 py-3 text-gray-90
+    @apply border-2 border-white bg-transparent px-6 py-3 text-white transition-all hover:bg-white hover:text-gray-90 rounded-full text-sm md:text-base md:px-8 md:py-3 font-semibold
   }
-  .btn_green  { 
-    @apply  border-green-50 bg-green-50 px-8 py-5 text-white
+  .btn_yellow  { 
+    @apply border-2 border-uganda-yellow bg-uganda-yellow px-6 py-3 text-black transition-all hover:bg-yellow-400 rounded-full text-sm md:text-base md:px-8 md:py-3 font-semibold
   }
-  .btn_dark_green { 
-    @apply  bg-green-90 px-8 py-4 text-white transition-all hover:bg-black
+  .btn_red  { 
+    @apply border-2 border-uganda-red bg-uganda-red px-6 py-3 text-white transition-all hover:bg-red-700 rounded-full text-sm md:text-base md:px-8 md:py-3 font-semibold
   }
-  .btn_dark_green_outline  { 
-    @apply border-gray-20 bg-green-90 px-8 py-5 text-white
+  .btn_black { 
+    @apply bg-black px-6 py-3 text-white transition-all hover:bg-gray-800 rounded-full text-sm md:text-base md:px-8 md:py-3 font-semibold
+  }
+  .btn_black_outline  { 
+    @apply border-2 border-black bg-transparent px-6 py-3 text-black transition-all hover:bg-black hover:text-white rounded-full text-sm md:text-base md:px-8 md:py-3 font-semibold
   }
   
   .max-container {
@@ -36,7 +41,7 @@ body {
   }
 
   .padding-container {
-    @apply px-6 lg:px-20 3xl:px-0;
+    @apply px-4 sm:px-6 lg:px-20 3xl:px-0;
   }
 
   .flexCenter {
@@ -55,93 +60,146 @@ body {
     @apply flex items-center justify-end;
   }
 
-  /* FONTS */
+  /* FONTS - Mobile first responsive */
   .regular-64 {
-    @apply text-[64px] font-[400] leading-[120%];
+    @apply text-[32px] sm:text-[48px] md:text-[64px] font-[400] leading-[120%];
   }
 
   .regular-40 {
-    @apply text-[40px] font-[400] leading-[120%];
+    @apply text-[24px] sm:text-[32px] md:text-[40px] font-[400] leading-[120%];
   }
 
   .regular-32 {
-    @apply text-[32px] font-[400];
+    @apply text-[20px] sm:text-[26px] md:text-[32px] font-[400];
   }
 
   .regular-24 {
-    @apply text-[24px] font-[400];
+    @apply text-[18px] sm:text-[20px] md:text-[24px] font-[400];
   }
 
   .regular-20 {
-    @apply text-[20px] font-[400];
+    @apply text-[16px] sm:text-[18px] md:text-[20px] font-[400];
   }
 
   .regular-18 {
-    @apply text-[18px] font-[400];
+    @apply text-[16px] md:text-[18px] font-[400];
   }
 
   .regular-16 {
-    @apply text-[16px] font-[400];
+    @apply text-[14px] md:text-[16px] font-[400];
   }
 
   .regular-14 {
-    @apply text-[14px] font-[400];
+    @apply text-[13px] md:text-[14px] font-[400];
   }
 
   .medium-14 {
-    @apply text-[14px] font-[600];
+    @apply text-[13px] md:text-[14px] font-[600];
   }
 
   .bold-88 {
-    @apply text-[88px] font-[700] leading-[120%];
+    @apply text-[36px] sm:text-[52px] md:text-[72px] lg:text-[88px] font-[700] leading-[120%];
   }
 
   .bold-64 {
-    @apply text-[64px] font-[700] leading-[120%];
+    @apply text-[32px] sm:text-[42px] md:text-[54px] lg:text-[64px] font-[700] leading-[120%];
   }
 
   .bold-52 {
-    @apply text-[52px] font-[700] leading-[120%];
+    @apply text-[28px] sm:text-[36px] md:text-[44px] lg:text-[52px] font-[700] leading-[120%];
   }
 
   .bold-40 {
-    @apply text-[40px] font-[700] leading-[120%];
+    @apply text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] font-[700] leading-[120%];
   }
 
   .bold-32 {
-    @apply text-[32px] font-[700] leading-[120%];
+    @apply text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] font-[700] leading-[120%];
+  }
+
+  .bold-24 {
+    @apply text-[18px] sm:text-[20px] md:text-[24px] font-[700];
   }
 
   .bold-20 {
-    @apply text-[20px] font-[700];
+    @apply text-[16px] md:text-[20px] font-[700];
   }
 
   .bold-18 {
-    @apply text-[18px] font-[700];
+    @apply text-[16px] md:text-[18px] font-[700];
   }
 
   .bold-16 {
-    @apply text-[16px] font-[700];
+    @apply text-[14px] md:text-[16px] font-[700];
   }
 
-  /* Hero */
-  .hero-map {
-    @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-60;
+  /* Racing Theme - Uganda colors */
+  .racing-gradient {
+    @apply bg-gradient-to-r from-uganda-red via-uganda-yellow to-black;
   }
 
-  /* Camp */
-  .camp-quote {
-    @apply absolute -right-6 bottom-4 w-[140px] lg:bottom-10 xl:-right-8 xl:w-[186px] 3xl:right-0;
+  .uganda-gradient {
+    @apply bg-gradient-to-br from-uganda-black via-uganda-yellow to-uganda-red;
   }
 
-  /* Feature */
-  .feature-phone {
-    @apply absolute top-[13%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex  3xl:left-20;
+  .checkered-bg {
+    background-image: 
+      linear-gradient(45deg, #000 25%, transparent 25%),
+      linear-gradient(-45deg, #000 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #000 75%),
+      linear-gradient(-45deg, transparent 75%, #000 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
   }
 
-  /* Get App */
-  .get-app {
-    @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-green-90 bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
+  /* Animations */
+  .fade-in {
+    animation: fadeIn 0.6s ease-in;
+  }
+
+  .slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  .zoom-in {
+    animation: zoomIn 0.5s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { 
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes zoomIn {
+    from { 
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to { 
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Racer Card Hover */
+  .racer-card {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+  }
+
+  /* Image Hover Effect */
+  .image-hover {
+    @apply transition-transform duration-300 hover:scale-110;
   }
 }
 
@@ -152,6 +210,31 @@ body {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FCDC04;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D90000;
+}
+
+/* Glass morphism */
+.glass {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(252, 220, 4, 0.3);
 }

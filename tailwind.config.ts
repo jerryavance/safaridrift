@@ -8,15 +8,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Uganda flag inspired colors
+        uganda: {
+          black: '#000000',
+          yellow: '#FCDC04',
+          red: '#D90000',
+        },
+        // Keep some green for accent but tone it down
         green: {
           50: '#30AF5B',
-          90: '#292C27',
+          90: '#1a1a1a',
         },
         gray: {
-          10: '#EEEEEE',
-          20: '#A2A2A2',
-          30: '#7B7B7B',
-          50: '#585858',
+          10: '#F5F5F5',
+          20: '#E0E0E0',
+          30: '#9E9E9E',
+          50: '#616161',
           90: '#141414',
         },
         orange: {
@@ -24,9 +31,6 @@ module.exports = {
         },
         blue: {
           70: '#021639',
-        },
-        yellow: {
-          50: '#FEC601',
         },
       },
       backgroundImage: {
