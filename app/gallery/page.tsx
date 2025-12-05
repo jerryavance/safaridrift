@@ -119,7 +119,7 @@ export default function GalleryPage() {
             </div>
             <div className="bg-white rounded-3xl p-8 text-center shadow-lg">
               <div className="text-5xl mb-4">🎬</div>
-              <h3 className="bold-24 mb-2">iPhone 12 Pro Max</h3>
+              <h3 className="bold-24 mb-2">Max</h3>
               <p className="regular-16 text-gray-600">Professional Quality</p>
             </div>
             <div className="bg-white rounded-3xl p-8 text-center shadow-lg">
